@@ -1,0 +1,437 @@
+/*
+font-family: 'Lato', sans-serif;
+font-family: 'Raleway', sans-serif;
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-family: 'Raleway', sans-serif;
+    font-size: 10px;
+    color: #000;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+/* ------------------- HEADER ----------------- */
+
+header {
+    min-height: 100vh;
+    background-image: url("header_1920.jpg");
+    background-repeat: no-repeat;
+    background-position: 0;
+    background-size: cover;
+}
+
+.overlay-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+}
+
+.title-header {
+    width: 100%;
+    text-align: center;
+    /* margin: 0 auto 0 auto; */
+    font-size: 4.8rem;
+    position: absolute;
+    top: 40%;
+    color: #fff;
+    text-shadow: 0 0 5px #000;
+}
+.subtitle-header {
+    width: 100%;
+    text-align: center;
+    /* margin: 0 auto 0 auto; */
+    font-size: 2.8rem;
+    position: absolute;
+    top: 50%;
+    color: #fff;
+    text-shadow: 0 0 5px #000;
+    font-weight: normal;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* background-color: #000; */
+    padding: 25px 0;
+}
+
+.menu {
+    width: 43%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+    /* background-color: #a43030; */
+}
+
+.menu li a {
+    transition: 0.2s;
+}
+
+.menu li a:hover {
+    color: rgb(176, 176, 176);
+}
+
+/* ------------------- ABOUT ----------------- */
+
+.about {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.header-about {
+    font-size: 30px;
+}
+
+.about p {
+    flex-basis: 50%;
+    height: 100%;
+    padding: 30px 50px;
+    font-size: 16px;
+    text-align: justify;
+    background-color: rgb(238, 219, 185);
+    border-radius: 20px;
+}
+
+.img-about {
+    /* flex-basis: 100px; */
+    width: 22%;
+}
+
+/* ------------------- EXPERIENCE ----------------- */
+
+.experience {
+    position: relative;
+    min-height: 100vh;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 0 0 0;
+}
+
+.title-exp {
+    position: absolute;
+    top: 5%;
+    font-size: 46px;
+    color: #fff;
+    text-shadow: 0 0 5px #000;
+}
+
+.exp {
+    width: 25%;
+    height: 70vh;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 15px #fff;
+}
+
+.exp-first {
+    background-image: url("exp1.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.exp-second {
+    background-image: url("exp2.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.exp-third {
+    background-image: url("exp3.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.exp-title {
+    position: relative;
+    top: 50%;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 22px;
+}
+
+.exp-description {
+    position: relative;
+    top: 56%;
+    width: 80%;
+    margin: 0 auto;
+    text-align: justify;
+    font-size: 16px;
+}
+
+/* ------------------- CONTACT ----------------- */
+
+.contact {
+    position: relative;
+    width: 100%;
+    height: 40vh;
+    background-image: url("contact_1920.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    font-size: 18px;
+}
+
+.overlay-contact {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 0;
+}
+
+.title-contact {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%);
+    font-size: 46px;
+    text-shadow: 0 0 5px #000;
+}
+
+.info {
+    position: absolute;
+    top: 50%;
+    left: 16%;
+    transform: translateY(-50%);
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.info p {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+}
+
+/* ------------------- TIMER ----------------- */
+
+.countdown-section {
+    text-align: center;
+}
+
+.countdown-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#countdown {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.time-box {
+    flex: 1;
+    padding: 10px;
+    background-color: #87ceeb;
+    margin: 0 10px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.time-box span {
+    display: block;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+/* ------------------- FOOTER ----------------- */
+
+footer {
+    bottom: 0;
+    height: 8vh;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p {
+    color: #fff;
+    font-size: 18px;
+}
+
+
+/* ------------------- MEDIA ----------------- */
+
+
+@media (max-width: 1024px) {
+    /* Zmniejszenie rozmiaru tekstu */
+    body {
+        font-size: 0.8rem;
+    }
+
+    /* Dostosowanie nagłówków */
+    .title-header, .subtitle-header, .title-exp, .title-contact {
+        font-size: 2.5rem;
+    }
+
+    /* Dostosowanie menu */
+    nav {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 0;
+    }
+
+    .menu {
+        width: 100%;
+        height: 200px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+    }
+    .menu li {
+        width: 100%;
+        padding: 10px 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        text-align: center;
+    }
+
+    .title-header {
+        font-size: 4rem;
+        top: 50%;
+    }
+    .subtitle-header{
+        top: 60%;
+        padding: 0 30px;
+    }
+
+    /* Dostosowanie sekcji */
+    .about p, .exp-description {
+        padding: 10px 20px;
+    }
+
+    /* Zmniejszenie rozmiaru obrazów */
+    .img-about, .exp-first, .exp-second, .exp-third {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Dostosowanie układu sekcji */
+    .about, .experience {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info {
+        left: 10%;
+    }
+}
+
+
+@media (max-width: 480px) {
+    /* ------------------- HEADER ----------------- */
+    body {
+        font-size: 0.7rem;
+    }
+
+    /* Dostosowanie nagłówków */
+    .title-header, .subtitle-header, .title-exp, .title-contact {
+        font-size: 2rem;
+    }
+
+    /* Dostosowanie sekcji */
+    .about p, .exp-description {
+        padding: 5px 10px;
+    }
+
+    /* Zmniejszenie rozmiaru obrazów */
+    .img-about, .exp-first, .exp-second, .exp-third {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Dostosowanie układu sekcji */
+    .about, .experience {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info {
+        left: 5%;
+    }
+
+
+    /* ------------------- ABOUT ----------------- */
+
+    .about {
+        padding: 50px 30px;
+    }
+
+    .about p{
+        padding: 30px 50px;
+    }
+
+    .img-about {
+        /* padding: 10px 30px;  */
+        width: 40%;
+    }
+
+
+    /* ------------------- EXPERIENCE ----------------- */
+
+    .experience {
+        padding: 50px 40px;
+    }
+
+    .title-exp {
+        top: 2%;
+    }
+
+    .exp {
+        height: 600px;
+        margin-top: 50px;
+        box-shadow: 0 0 5px #fff;
+    }
+
+
+    /* ------------------- FOOTER ----------------- */
+
+    footer {
+        height: 12vh;
+    }
+
+    footer p {
+        text-align: center;
+    }
+
+
+}
+
